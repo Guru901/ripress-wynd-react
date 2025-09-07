@@ -1,0 +1,8 @@
+[package]
+name = "rust-react"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ripress = { version = "*" }
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }

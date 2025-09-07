@@ -4,5 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-ripress = { version = "*" }
+ripress = { version = "*", features = ["with-wynd"] }
+wynd = { version ="*", features = ["with-ripress"] }
 tokio = { version = "1", features = ["rt-multi-thread", "macros"] }

@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div style={{ padding: 24, fontFamily: "system-ui, sans-serif" }}>
-      <h1>Ripress + React minimal demo</h1>
+      <h1>Ripress + Wynd + React minimal demo</h1>
       <div>
         <h2>/hello</h2>
         <pre>{hello ? JSON.stringify(hello, null, 2) : "Loading..."}</pre>

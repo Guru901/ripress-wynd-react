@@ -813,6 +813,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "ripress-wynd-react-minimal-demo"
+version = "0.1.0"
+dependencies = [
+ "ripress",
+ "tokio",
+ "wynd",
+]
+
+[[package]]
 name = "routerify"
 version = "3.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -823,15 +832,6 @@ dependencies = [
  "lazy_static",
  "percent-encoding",
  "regex",
-]
-
-[[package]]
-name = "rust-react"
-version = "0.1.0"
-dependencies = [
- "ripress",
- "tokio",
- "wynd",
 ]
 
 [[package]]

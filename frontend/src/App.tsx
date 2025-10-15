@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function App() {
-  const [hello, setHello] = useState<any>(null);
+  const [hello, setHello] = useState<string>("");
   const [input, setInput] = useState("");
   const [ws, setWs] = useState<WebSocket>();
   const [messages, setMessages] = useState<string[]>([]);
@@ -16,12 +16,9 @@ function App() {
       }
 
       const data = await response.text();
-      console.log(data);
-
       setHello(data);
 
       ws.onopen = () => {
-        console.log("WebSocket connected");
         setWs(ws);
       };
 
@@ -42,7 +39,7 @@ function App() {
       <h1>Ripress + Wynd + React minimal demo</h1>
       <div>
         <h2>/hello</h2>
-        <pre>{hello ? JSON.stringify(hello, null, 2) : "Loading..."}</pre>
+        <pre>{hello ?? "Loading..."}</pre>
       </div>
       <div>
         <h2>Websocket</h2>
